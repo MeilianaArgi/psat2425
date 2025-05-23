@@ -50,7 +50,7 @@ Langkah-langkah:
          • IP 0.0.0.0/0
 
 ## Kemudian tambahkan Script Otomatis di "User Data" pada EC2 Instance 
-
+```
 #!/bin/bash
 sudo apt update -y
 sudo apt install -y apache2 php php-mysql libapache2-mod-php mysql-client
@@ -65,7 +65,7 @@ sudo apt install openssl
 sudo a2enmod ssl
 sudo a2ensite default-ssl.conf
 sudo systemctl reload apache2
-
+```
 ## Akses atau Buka Manual di Terminal EC2
 
 Langkah-langkah:
@@ -76,17 +76,19 @@ Langkah-langkah:
 ## Untuk menjalankan otomatis.sh ada 2 cara:
 
 1. Dieksekusi Langsung dengan perintah
+```
         $ bash otomatis.sh 
-
+```
 2. Dibuat menjadi executable dan dieksekusi dengan perintah 
+```
          $ chmod +x otomatis.sh
          $ ./otomatis.sh
-
-Jalankan
+```
+## Jalankan
 
 Jalankan dengan username dan password berikut:
 
-• username: admin
+• username: admin </br>
 • password: 123
 
 Gitu kali yaa
